@@ -31,6 +31,8 @@ jobs:
       - name: Pre-process README
         run: |
           sed -i 's/\[!IMPORTANT\]/**Important:**/g' README.md
+          sed -i 's/\[!NOTE\]/**Note:**/g' README.md
+          sed -i '/<!-- HEADER_START -->/,/<!-- HEADER_END -->/d' README.md
       - name: Setup Pages
         uses: actions/configure-pages@v5
       - name: Build with Jekyll
