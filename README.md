@@ -104,7 +104,7 @@ On the baord you will also find an SD card slot that allows the system to save l
 
 The CLU inside the Pulsar is a simple 4 layer, 60 x 75 mm PCB, that can be hand-soldered.
 
-<div markdown="1" align="center">
+<div align="center">
 <p float="left">
     <img src="./Images/clu-toppcb.png" width="49%">
     <img src="./Images/clu-bottompcb.png" width="49%">
@@ -121,7 +121,7 @@ Each rail's switching controller can be chosen between a 3 A variant and a 2 A o
 
 The PSU inside the Pulsar is a 4 layer, 60 x 60 mm PCB, that can be hand-soldered.
 
-<div markdown="1" align="center">
+<div align="center">
 <p float="left">
     <img src="./Images/psu-toppcb.png" width="49%">
     <img src="./Images/psu-bottompcb.png" width="49%">
@@ -138,7 +138,7 @@ The radio modules I decided to use are SemTech SX1262 and SX1281 based, and use 
 
 The specific modules I chose are from Ebyte: E22-xxxMxxS and E28-2G4MxxSX modules variaties. I then designed a simple carrier board that allows to connect both types of modules to the 10 pin MODx data connector and the power connector. It's noteworthy that these LoRa modules, unlike others, even from the same Ebyte, expose direct communication to the SemTech chip, so the SPI interface is exactly the same I would have using different SX1262/SX1281 modules (even completely custom ones).
 
-<div markdown="1" align="center">
+<div align="center">
 <p float="left">
     <img src="./Images/e22e28mod-toppcb.png" width="49%">
     <img src="./Images/e22e28mod-bottompcb.png" width="49%">
@@ -159,7 +159,7 @@ Since some advanced modems consume a lot of power and produce plenty of heat, th
 
 The NGFF to USB3.0 adapter is a 4 layer, 60 x 75 mm PCB, that should be produced with a calculated stackup (more on this in the [PCB sourcing](#pcb-sourcing) section). It can be hand-soldered but I would suggest to leave the assembly of the NGFF and USB connector to a P&P machine.
 
-<div markdown="1" align="center">
+<div align="center">
 <p float="left">
     <img src="./Images/ngffusb-toppcb.png" width="49%">
     <img src="./Images/ngffusb-bottompcb.png" width="49%">
