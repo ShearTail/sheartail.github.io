@@ -9,7 +9,7 @@
 
 <img src="./Images/pulsar-logo.png" width="300px">
 
-</div markdown="1">
+</div>
 
 > [!IMPORTANT]
 > Hi! If you want to receive a notification when the system is ready-to-deploy, consider checking out the Pulsar's website [here](https://sheartail.net) where you'll be able to subcribe to the newsletter (we'll only send out emails for the launch day, no spam).
@@ -74,7 +74,7 @@ The hardware is released under the CERN-OHL-S license (In particular, everything
 > [!IMPORTANT]
 > To keep this guide simple and understandable, in the following chapters I will refer to a particular configuration of the modules and parts, although the user knows that the system is highly customizable and can be changed from start to finish. The configuration that I will refer to is as follows: 3S battery, DCDC with 5.0V@3A, 3.3V@2A and 3.8V@3A (for the LTE modem), a Raspberry Pi 3B SBC or similar WiFi and USB3 capable SBC, a Quectel LTE EM05 modem, a generic UART GNSS 5V module, a single SX1281 2.4 GHz module powered from the 3.3 V and a single SX1262 868 MHz module powered from the 5.0 V.
 
-<div align="justify">
+<div markdown="1" align="justify">
 
 ## Sponsors
 
@@ -104,7 +104,7 @@ On the baord you will also find an SD card slot that allows the system to save l
 
 The CLU inside the Pulsar is a simple 4 layer, 60 x 75 mm PCB, that can be hand-soldered.
 
-<div align="center">
+<div markdown="1" align="center">
 <p float="left">
     <img src="./Images/clu-toppcb.png" width="49%">
     <img src="./Images/clu-bottompcb.png" width="49%">
@@ -121,7 +121,7 @@ Each rail's switching controller can be chosen between a 3 A variant and a 2 A o
 
 The PSU inside the Pulsar is a 4 layer, 60 x 60 mm PCB, that can be hand-soldered.
 
-<div align="center">
+<div markdown="1" align="center">
 <p float="left">
     <img src="./Images/psu-toppcb.png" width="49%">
     <img src="./Images/psu-bottompcb.png" width="49%">
@@ -138,7 +138,7 @@ The radio modules I decided to use are SemTech SX1262 and SX1281 based, and use 
 
 The specific modules I chose are from Ebyte: E22-xxxMxxS and E28-2G4MxxSX modules variaties. I then designed a simple carrier board that allows to connect both types of modules to the 10 pin MODx data connector and the power connector. It's noteworthy that these LoRa modules, unlike others, even from the same Ebyte, expose direct communication to the SemTech chip, so the SPI interface is exactly the same I would have using different SX1262/SX1281 modules (even completely custom ones).
 
-<div align="center">
+<div markdown="1" align="center">
 <p float="left">
     <img src="./Images/e22e28mod-toppcb.png" width="49%">
     <img src="./Images/e22e28mod-bottompcb.png" width="49%">
@@ -159,7 +159,7 @@ Since some advanced modems consume a lot of power and produce plenty of heat, th
 
 The NGFF to USB3.0 adapter is a 4 layer, 60 x 75 mm PCB, that should be produced with a calculated stackup (more on this in the [PCB sourcing](#pcb-sourcing) section). It can be hand-soldered but I would suggest to leave the assembly of the NGFF and USB connector to a P&P machine.
 
-<div align="center">
+<div markdown="1" align="center">
 <p float="left">
     <img src="./Images/ngffusb-toppcb.png" width="49%">
     <img src="./Images/ngffusb-bottompcb.png" width="49%">
@@ -232,7 +232,7 @@ Over the course of this chapter I will go into some detail about how to procure 
 > [!Caution]
 > The process of ordering the PCBs, ordering all the components (80+ individual components) and soldering everything together is truly a non-trivial task. I'm going to assume that if you are trying to build the hardware from skratch you know what you are doing, this means you have already ordered PCBs in the past, you know what a stackup is, you know what impedance is, etc.. While trying to build this hardware there is the very real chance of breaking something and possibly hurting yourself.
 
-<div align="justify">
+<div markdown="1" align="justify">
 
 ### Tools
 
@@ -259,7 +259,7 @@ I strongly suggest, when ordering the PCBs, to also order PCB assembly for two c
 > [!IMPORTANT]
 > Remember to set the NGFFUSB board stackup to guarantee 90 ohm impedance matched super-speed USB lines. Starting from the next revisions (rev2.x) the NGFFUSB PCB will be designed to be manufactured with matched impedance at [PCBWay](https://pcbway.com), without the need to do any math on the stackup. If not ordering from PCBWay, the USB SS lines are edge coupled microstrip lines, 0.1554 mm wide and spaced 0.2032 mm apart, so be sure to do you math before ordering.
 
-<div align="justify">
+<div markdown="1" align="justify">
 
 ### PCB Assembly
 
