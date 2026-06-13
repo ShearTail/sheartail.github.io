@@ -1,3 +1,4 @@
+<!-- HEADER_START -->
 <div markdown="1" align="center">
 
 # Pulsar
@@ -10,6 +11,7 @@
 <img src="./Images/pulsar-logo.png" width="300px">
 
 </div>
+<!-- HEADER_END -->
 
 > [!IMPORTANT]
 > Hi! If you want to receive a notification when the system is ready-to-deploy, consider checking out the Pulsar's website [here](https://sheartail.net) where you'll be able to subcribe to the newsletter (we'll only send out emails for the launch day, no spam).
