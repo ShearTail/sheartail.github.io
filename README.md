@@ -9,7 +9,7 @@
 
 <img src="./Images/pulsar-logo.png" width="300px">
 
-</div>
+</div markdown="1">
 
 > [!IMPORTANT]
 > Hi! If you want to receive a notification when the system is ready-to-deploy, consider checking out the Pulsar's website [here](https://sheartail.net) where you'll be able to subcribe to the newsletter (we'll only send out emails for the launch day, no spam).
@@ -23,7 +23,7 @@
 > [!CAUTION]
 > Always check with local authority about RF bands regulations in your area.
 
-<div align="justify">
+<div markdown="1" align="justify">
 
 This document contains an overview of the project, a simple description of its parts and its development process, basic instructions on how to build your own Pulsar and how to use it, along with some renders and pictures.<br>
 I hope you will enjoy the process and you are always welcome to open an issue for feedbacks and questions.
