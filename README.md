@@ -1,4 +1,4 @@
-<div align="center">
+<div markdown="1" align="center">
 
 # Pulsar
 
